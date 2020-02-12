@@ -1,0 +1,21 @@
+@mixin padding-15($padding: 15) {
+    padding-right: #{$padding}px;
+    padding-left:#{$padding}px;
+}
+
+@mixin padding--15($padding: 15) {
+    padding-right: #{$padding*-1}px;
+    padding-left:#{$padding*-1}px;
+}
+
+@mixin margin-auto{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin user-select($value:none){
+    -webkit-user-select:#{$value};
+    -moz-user-select:#{$value};
+    -ms-user-select:#{$value};
+     user-select:#{$value};
+}
